@@ -92,6 +92,9 @@ int main(int argc, char **argv)
     if (argc == 0) {
         usage(EXIT_SUCCESS);
     }
+    if (verbose) {
+        std::cout << "Repeat count = " << repeat_count << std::endl;
+    }
     for (int i = 0; i < argc; i++) {
         const char *filename = argv[i];
         try {
